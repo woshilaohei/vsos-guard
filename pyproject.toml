@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "vsos-guard"
+version = "0.5.1"
+description = "Zero-dependency AI agent security guard with 3-tier routing and near-zero false positives"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [
+    {name = "VSOS Guard Team", email = "xiaohei-vsos@coze.email"}
+]
+keywords = ["ai", "security", "guard", "agent", "safety", "prompt-injection", "jailbreak", "llm-security"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Security",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.urls]
+Homepage = "https://github.com/woshilaohei/vsos-guard"
+Documentation = "https://github.com/woshilaohei/vsos-guard#readme"
+Repository = "https://github.com/woshilaohei/vsos-guard"
+Bug Tracker = "https://github.com/woshilaohei/vsos-guard/issues"
+Demo = "https://woshilaohei.github.io/vsos-guard/"
+
+[tool.setuptools.packages.find]
+include = ["vsos_guard*"]
