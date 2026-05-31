@@ -8,6 +8,8 @@
 [![GitHub Stars](https://img.shields.io/github/stars/woshilaohei/vsos-guard?style=social)](https://github.com/woshilaohei/vsos-guard/stargazers)
 [![在线演示](https://img.shields.io/badge/demo-live-brightgreen)](https://woshilaohei.github.io/vsos-guard/)
 
+**中文** | [English](README.md)
+
 > **社区最好用的安全插件，没有之一。**
 
 多点防线，少点误拦。装上就管用，不装真不行。

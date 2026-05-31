@@ -8,6 +8,8 @@
 [![GitHub Stars](https://img.shields.io/github/stars/woshilaohei/vsos-guard?style=social)](https://github.com/woshilaohei/vsos-guard/stargazers)
 [![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://woshilaohei.github.io/vsos-guard/)
 
+[中文文档](README_CN.md) | **English**
+
 > **The best community security plugin, period.**
 
 More defense, less false positives. Install and it works. Don't install, you'll regret it.
