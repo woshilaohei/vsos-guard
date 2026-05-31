@@ -1,18 +1,18 @@
 [build-system]
-requires = ["setuptools>=64", "wheel"]
+requires = ["setuptools>=68.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "vsos-guard"
-version = "0.3.0"
-description = "社区最好用的AI安全插件，没有之一——能不拦就不拦，该拦的绝对不漏"
+version = "0.5.2"
+description = "Zero-dependency AI agent security guard with 3-tier routing and near-zero false positives"
 readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.8"
 authors = [
-    {name = "老黑（大成）", email = "xiaohei-vsos@coze.email"},
+    {name = "VSOS Guard Team", email = "xiaohei-vsos@coze.email"}
 ]
-keywords = ["ai", "security", "guard", "guardrails", "safety", "jailbreak", "injection"]
+keywords = ["ai", "security", "guard", "agent", "safety", "prompt-injection", "jailbreak", "llm-security"]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
@@ -23,17 +23,18 @@ classifiers = [
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
     "Topic :: Security",
     "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
 ]
 
 [project.urls]
-Homepage = "https://github.com/vsos-guard/vsos-guard"
-Repository = "https://github.com/vsos-guard/vsos-guard"
-Issues = "https://github.com/vsos-guard/vsos-guard/issues"
+Homepage = "https://github.com/woshilaohei/vsos-guard"
+Documentation = "https://github.com/woshilaohei/vsos-guard#readme"
+Repository = "https://github.com/woshilaohei/vsos-guard"
+"Bug Tracker" = "https://github.com/woshilaohei/vsos-guard/issues"
+Demo = "https://woshilaohei.github.io/vsos-guard/"
 
 [tool.setuptools.packages.find]
 include = ["vsos_guard*"]
-
-[tool.pytest.ini_options]
-testpaths = ["tests"]
