@@ -1,31 +1,40 @@
-# 贡献指南
+# Contributing to VSOS
 
-感谢你对 VSOS Guard 的关注！
+Thank you for your interest in contributing to VSOS. This is a novel AI security architecture — contributions span from low-level system engineering to security rule design to visualization.
 
-## 如何贡献
+## How to Contribute
 
-### 报告问题
-- 在 [GitHub Issues](https://github.com/vsos-guard/vsos-guard/issues) 提交
-- 包含：输入内容、期望结果、实际结果、使用的模式
+1. **Fork** the repository
+2. **Create a branch** for your work (`git checkout -b feature/your-feature`)
+3. **Make your changes** with clear commit messages
+4. **Submit a Pull Request** with a description of what and why
 
-### 提交代码
-1. Fork 本仓库
-2. 创建特性分支：`git checkout -b feature/你的特性`
-3. 提交改动：`git commit -m '添加某某特性'`
-4. 推送分支：`git push origin feature/你的特性`
-5. 发起 Pull Request
+## Code Standards
 
-### 测试要求
-- 所有改动必须通过现有测试：`PYTHONPATH=. python tests/test_v100.py`
-- 新增功能必须附带测试用例
-- 目标：0误拦 + 0漏拦
+- Python code follows PEP 8
+- All detection logic must be explainable (no pure black-box models in the adjudication pipeline)
+- Attack DNA must be persistently traceable (every decision needs a causal chain)
+- Do not introduce hard-coded keyword lists without justification — VSOS uses variable-essence analysis, not keyword matching
 
-### 核心原则
-- **能不拦就不拦，该拦的绝对不漏**
-- 纯规则引擎，不用LLM做检测
-- 延迟 < 1ms
-- 零依赖
+## Security Principles
 
-## 许可证
+When contributing, please respect VSOS's core invariant:
 
-贡献的代码遵循 MIT License。
+- **Every attack must leave a trace** — no silent bypass
+- **Poison anchors are permanent** — do not add logic that can remove confirmed dangerous coordinates
+- **Soil only grows** — danger zone expands monotonically, never contracts
+- **All decisions are auditable** — each verdict must have a causal chain
+
+## Detection Rule Guidelines
+
+- New anchors should cover one clear attack dimension
+- Include test cases (SAFE/BLOCK/WARNING) when submitting new detection logic
+- Run `python vsos_guard.py` to verify the 134-sample test suite still passes (target: 98%+ accuracy)
+
+## Discussion
+
+For architecture discussions and design questions, open an Issue with the `discussion` label.
+
+## License
+
+By contributing, you agree that your contributions will be licensed under the MIT License.
